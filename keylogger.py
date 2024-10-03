@@ -45,10 +45,10 @@ GetMessageA.argtypes = (wintypes.LPMSG, wintypes.HWND, wintypes.UINT, wintypes.U
 GetMessageA.restype = wintypes.BOOL
 
 class KBDLLHOOKSTRUCT (Structure):
-    _fields_ = [("vkCode", wintypes.DWORD)
-                ("scanCode", wintypes.DWORD)
-                ("flags", wintypes.DWORD)
-                ("time", wintypes.DWORD)
+    _fields_ = [("vkCode", wintypes.DWORD),
+                ("scanCode", wintypes.DWORD),
+                ("flags", wintypes.DWORD),
+                ("time", wintypes.DWORD),
                 ("dwExtraInfo", wintypes.DWORD)]
     
 def get_foreground_process():
